@@ -25,6 +25,26 @@
 
 确保目录内包含 `SKILL.md`。
 
+## 发布到你自己的 GitHub
+
+在 [GitHub](https://github.com/new) 新建仓库（例如名称为 `effective-ai-dialogue`），**不要**勾选添加 README / .gitignore / License（本地已有）。
+
+在本目录执行（把 `YOUR_USERNAME` 换成你的 GitHub 用户名）：
+
+```bash
+git remote add origin https://github.com/YOUR_USERNAME/effective-ai-dialogue.git
+git push -u origin main
+```
+
+若使用 SSH：
+
+```bash
+git remote add origin git@github.com:YOUR_USERNAME/effective-ai-dialogue.git
+git push -u origin main
+```
+
+首次推送需在 GitHub 登录或配置 [Personal Access Token](https://github.com/settings/tokens)。
+
 ## 许可证
 
 MIT License — 可自由复制、修改与商用，保留版权声明即可。
